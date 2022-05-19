@@ -34,3 +34,18 @@ export const WrapperCards = styled.div`
   justify-content: center;
   margin: 38px 0;
 `;
+
+export const FooterButtons = styled.footer`
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  @media (max-width: 425px) {
+    flex-direction: column;
+
+    button {
+      padding: 16px 72px;
+      margin-bottom: 16px;
+    }
+  }
+`;

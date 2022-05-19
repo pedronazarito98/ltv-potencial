@@ -7,6 +7,8 @@ export const CardDeposition = styled.div`
   justify-content: center;
   flex-wrap: wrap;
 
+  margin: 0 auto;
+
   width: 100%;
   max-width: 474px;
   padding: 30px;
@@ -16,7 +18,10 @@ export const CardDeposition = styled.div`
 
 
   @media (max-width: 768px) {
-    max-width: 350px;
+    max-width: 508px;
+  }
+  @media (max-width: 425px) {
+    max-width: 401px;
   }
 
   @media (max-width: 320px) {
@@ -52,6 +57,7 @@ export const FooterCard = styled.footer`
 
   span {
     color: white;
+    font-weight: bold;
   }
 `;
 
@@ -74,4 +80,14 @@ export const WrapperText = styled.div`
   flex-direction: column;
 
   margin-left: 16px;
+
+  p{
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  img{
+    width: 100px;
+    margin-bottom: 8px;
+  }
 `;

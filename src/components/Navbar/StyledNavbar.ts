@@ -2,15 +2,18 @@ import styled from "styled-components";
 
 interface NavbarProps {
   visible: boolean;
+  visibleButton?:boolean;
 }
 
 export const ContainerNavbar = styled.nav<NavbarProps>`
   display: flex;
-  align-items: center;
-  justify-content: space-between;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: ${({ visibleButton }) =>
+    !visibleButton ? "center" : "space-between"};
 
   position: fixed;
+  z-index: 99;
   top: ${({ visible }) => (visible ? "0" : "0px")};
 
   width: 100%;

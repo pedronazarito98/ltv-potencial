@@ -1,10 +1,9 @@
 import styled from "styled-components";
-import { ContainerDeposition } from "../Depositions/StyledDepositions";
 
 export const ContainerRecommendations = styled.section`
   width: 100%;
-  max-width: 950px;
-  margin: 0 auto 30px auto;
+  /* max-width: 950px; */
+  margin: 65px auto;
 
   display: flex;
   flex-wrap: wrap-reverse;
@@ -50,6 +49,47 @@ export const WrapperImage = styled.div`
   @media (max-width: 768px) {
     img {
       width: 280px;
+    }
+  }
+`;
+
+export const ButtonAction = styled.a`
+  color: #fff;
+  border: 0;
+  font-size: 16px;
+  overflow: hidden;
+  padding: 14px 40px;
+  border-radius: 0.25rem;
+  background: var(--blue-200);
+  margin: 26px 30px;
+  transition: all 0.25s;
+  &:hover {
+    background: var(--blue-100);
+  }
+
+  @media (max-width: 768px) {
+    margin: 4px 8px;
+  }
+  @media (max-width: 425px) {
+    padding: 10px 72px;
+    margin: 0;
+  }
+`;
+
+export const ContainerButton = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  button {
+    padding: 16px 24px;
+  }
+
+  @media (max-width: 425px) {
+    flex-direction: column;
+    button {
+      padding: 16px 24px;
+      margin: 8px 0;
     }
   }
 `;

@@ -1,39 +1,75 @@
 import {
   ContainerDeposition,
   ContainerEmpresas,
-  WrapperLogos,
+  ContainerLogos,
+  WrapperLogo,
 } from "./StyledDepositions";
 
-import imgLocaliza from "../../assets/logos/Localiza.png";
-import imgHapVida from "../../assets/logos/Hapvida.png";
-import imgBradesco from "../../assets/logos/Bradesco.png";
-import imgNeon from "../../assets/logos/Neon_Versão principal.png";
+import {
+  dataDepositions,
+  dataImage,
+} from "../../Mocks/DataDepositions/dataDepositions";
 import { CardDepositions } from "../../components/Cards/CardDepositions/CardDepositions";
-import { dataDepositions } from "../../Mocks/DataDepositions/dataDepositions";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Navigation, Autoplay } from "swiper";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import "./stylesSwiper.css";
 
 export function Depositions() {
   return (
     <ContainerDeposition>
-      {dataDepositions.map(({ name, company, depoiment, imgDepositions }) => (
-        <CardDepositions
-          depoiment={depoiment}
-          name={name}
-          company={company}
-          imgDepositions={imgDepositions}
-        />
-      ))}
+      <Swiper
+        slidesPerView={1}
+        spaceBetween={30}
+        loop={true}
+        pagination={{
+          clickable: true,
+        }}
+        autoplay={{
+          delay: 3500,
+          disableOnInteraction: false,
+        }}
+        centeredSlides={true}
+        navigation={true}
+        modules={[Autoplay, Pagination, Navigation]}
+        style={{
+          margin: "0px",
+          width: " 500px",
+          borderRadius: "8px",
+          background: `var(--text-color)`,
+        }}
+      >
+        {dataDepositions.map(
+          ({ name, company, depoiment, imgDepositions, office }) => (
+            <SwiperSlide>
+              <CardDepositions
+                key={name}
+                depoiment={depoiment}
+                name={name}
+                company={company}
+                imgDepositions={imgDepositions}
+                office={office}
+              />
+            </SwiperSlide>
+          )
+        )}
+      </Swiper>
 
       <ContainerEmpresas>
         <span>
           <strong>Empresas líderes no mercado</strong> que confiam na Cinnecta
         </span>
 
-        <WrapperLogos>
-          <img src={imgLocaliza} alt="imgLogo" />
-          <img src={imgHapVida} alt="imgLogo" />
-          <img src={imgBradesco} alt="imgLogo" />
-          <img src={imgNeon} alt="imgLogo" />
-        </WrapperLogos>
+        <ContainerLogos>
+          {dataImage.map(({ image }) => (
+            <WrapperLogo>
+              <img src={image} alt="imgLogo" loading="lazy" />
+            </WrapperLogo>
+          ))}
+        </ContainerLogos>
       </ContainerEmpresas>
     </ContainerDeposition>
   );

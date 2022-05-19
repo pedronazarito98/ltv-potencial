@@ -67,4 +67,12 @@ export const WrapperContent = styled.div`
       font-size: 13px;
     }
   }
+  @media (max-width: 320px) {
+    h1 {
+      font-size: 14px;
+    }
+    p {
+      font-size: 12px;
+    }
+  }
 `;

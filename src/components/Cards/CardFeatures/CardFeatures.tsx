@@ -9,7 +9,7 @@ interface CardFeaturesProps {
 export function CardFeatures({ image, title, description }: CardFeaturesProps) {
   return (
     <ContainerCard>
-      <img src={image} alt="" />
+      <img src={image} alt="icon feature" loading="lazy" />
       <WrapperContent>
         <h1>{title}</h1>
         <p>{description}</p>

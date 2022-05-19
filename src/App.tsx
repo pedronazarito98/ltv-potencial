@@ -1,15 +1,17 @@
-import { Footer } from "./components/Footer/Footer";
-import { Navbar } from "./components/Navbar/Navbar";
-import { Homepage } from "./pages/Homepage";
+import { Router } from "./route";
+import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer } from "react-toastify";
+import { ChakraProvider } from "@chakra-ui/react";
 import { GlobalStyle } from "./styles/globalStyles";
 
 export function App() {
   return (
     <>
-      <Navbar />
-      <Homepage />
-      <Footer/>
-      <GlobalStyle />
+      <ChakraProvider resetCSS={false}>
+        <Router />
+        <GlobalStyle />
+        <ToastContainer />
+      </ChakraProvider>
     </>
-  ); 
+  );
 }

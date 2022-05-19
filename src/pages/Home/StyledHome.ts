@@ -7,5 +7,10 @@ export const ContainerMain = styled.main`
   display: flex;
   flex-direction:column;
   flex-wrap: wrap;
+
+  @media (max-width:320px){
+  margin: 168px auto 0 auto;
+
+  }
   
 `;

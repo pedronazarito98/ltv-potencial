@@ -8,16 +8,19 @@ interface WrapperInputProps {
 export const ContainerForm = styled.section`
   display: flex;
   flex-direction: column;
+  align-items:center;
 
   width: 100%;
-  max-width: 856px;
-  margin: 32px auto;
 
   h1 {
     font-size: 47px;
     font-weight: bold;
     color: var(--text-color);
     text-align: center;
+
+    display: inline-block;
+    width: 100%;
+    max-width: 800px;
   }
 
   @media (max-width: 768px) {
@@ -34,11 +37,11 @@ export const ContainerForm = styled.section`
   }
 `;
 
-export const FormularioWrapper = styled.form`
+export const FormularioWrapper = styled.form<WrapperInputProps>`
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: ${({ justify }) => justify && `${justify}`};
 
   width: 100%;
   margin: 0 auto;
@@ -48,25 +51,49 @@ export const FormularioWrapper = styled.form`
 export const WrapperInput = styled.div<WrapperInputProps>`
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: baseline;
   justify-content: ${({ justify }) => justify && `${justify}`};
 
   width: 100%;
   max-width: ${({ maxWidth }) => (maxWidth ? `${maxWidth}px` : "305px")};
   margin: 8px;
-
   button {
-    margin-left: 8px;
+    margin: 0 8px;
   }
 
   @media (max-width: 425px) {
     max-width: 302px;
-
+    button{
+      padding: 16px 90px;
+    }
+  }
+  @media (max-width: 320px) {
+    button{
+      padding: 16px 70px;
+    }
   }
 `;
 
+
+export const CapsuleField = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  width: 100%;
+  max-width: 355px;
+
+  p{
+    margin: 0 8px;
+    color:red;
+  }
+`;
+
+
+
+
 export const FooterForm = styled.footer`
-  margin: 0 104px;
+  margin: 0 75px;
   label {
     color: var(--text-color);
     font-weight: 500;

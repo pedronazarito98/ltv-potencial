@@ -27,12 +27,13 @@ export const GlobalStyle = createGlobalStyle`
         background: var(--background);
         -webkit-font-smoothing: antialiased;
     }
-    body,input, textarea, button {
-        font-family: 'Poppins', sans-serif;
+    body,input, textarea, button,p, span {
+        font-family: 'Raleway', sans-serif;
         font-weight: 400;
     }
     h1, h2, h3, h4, h5, h6, strong {
         font-weight: 600;
+        font-family: 'Cabin', sans-serif;
     }
     button {
         cursor: pointer;
@@ -40,7 +41,6 @@ export const GlobalStyle = createGlobalStyle`
     }
     a{
         text-decoration: none;
-        
     }
     [disabled] {
         opacity: 0.6;

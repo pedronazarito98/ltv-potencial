@@ -8,7 +8,7 @@ export const StyledInput = styled.input`
   margin: 8px;
   
   width: 100%;
-  max-width: 350px;
+  max-width: 338px;
 
   &::placeholder {
     text-align: left;

@@ -8,24 +8,24 @@ export const dataCardFeatures = [
     image: upCreditIcon,
     title: "Maximizar o valor de cada cliente",
     description:
-      "Identifique oportunidades de negócio a partir do potencial real de geração de valor de cada cliente.",
+      "Identifique quais são exatamente os perfis com maior potencial de geração de valor.",
   },
   {
     image: segmentesIcon,
     title: "Hipersegmentar",
     description:
-      "Impulsione suas métricas de conversão com base no perfil de cada um de seus clientes.",
+      "Classifique os perfis dos seus clientes em micro-clusters e impulsione a conversão das suas campanhas de marketing.",
   },
   {
     image: churnIcon,
     title: "Reduzir churn",
     description:
-      "Saiba quais são os clientes com risco de desistência ou abandono.",
+      "Saiba quais são os clientes com maior risco de desistência ou abandono e fidelize de forma preditiva.",
   },
   {
     image: experienceIcon,
     title: "Melhorar a experiência",
     description:
-      "Saiba quais são os clientes com maior risco de desistência ou abandono.",
+      "Ofereça experiências totalmente personalizadas, no tempo e com grupo correto de clientes.",
   },
 ];

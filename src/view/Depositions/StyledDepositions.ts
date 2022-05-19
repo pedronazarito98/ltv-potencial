@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const ContainerDeposition = styled.section`
   width: 100%;
-  max-width: 950px;
+  max-width: 1030px;
   margin: 30px auto 10px auto;
 
   display: flex;
@@ -29,7 +29,8 @@ export const ContainerEmpresas = styled.div`
   }
 
   @media (max-width: 768px) {
-    max-width: 330px;
+    padding: 24px;
+    max-width: 579px;
   }
 
   @media (max-width: 320px) {
@@ -37,15 +38,21 @@ export const ContainerEmpresas = styled.div`
   }
 `;
 
-export const WrapperLogos = styled.div`
+export const ContainerLogos = styled.div`
   display: flex;
   flex-wrap: wrap;
 
   padding: 30px 0;
-  justify-content: space-around;
-  align-content: flex-start;
+  align-content: center;
+  justify-content: space-between;
 
-  img {
-    margin: 16px 16px 16px 0px;
+  @media (max-width: 320px){
+    width: 100%;
+    flex-direction: column;
+
   }
+`;
+
+export const WrapperLogo = styled.div`
+  margin: 16px 8px;
 `;
