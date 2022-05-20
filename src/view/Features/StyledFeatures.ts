@@ -27,8 +27,9 @@ export const TitleFeature = styled.h1`
 `;
 
 export const WrapperCards = styled.div`
+  width: 100%;
+  max-width: 1440px;
   display: flex;
-
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;

@@ -22,10 +22,10 @@ export const ContainerDifference = styled.section`
 export const ContainerContent = styled.div`
   width: 100%;
   margin-top: 45px;
-
+  padding: 0 66px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
 
   img {
     width: 560px;

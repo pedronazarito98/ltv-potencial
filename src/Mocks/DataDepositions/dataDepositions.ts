@@ -1,6 +1,6 @@
 import imgNeon from "../../assets/logos/Samantha-Pittzer.jpg";
 import imgLocaliza from "../../assets/logos/Gustavo-Borges.jpg";
-import imgPorto from "../../assets/logos/Fábio-Morita-Foto.png";
+import imgPorto from "../../assets/logos/Fabio-Morita-Foto.png";
 
 import logoLocaliza from "../../assets/logos/Localiza.png";
 import logoPorto from "../../assets/logos/Porto-seguro.png";

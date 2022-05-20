@@ -5,8 +5,7 @@ export function Footer(){
     return (
       <StyledFooter>
         <span>
-          Cinnecta &copy; {new Date().getFullYear()} º Todos os direitos
-          reservados
+          Cinnecta &copy; {new Date().getFullYear()} • Todos os direitos reservados
         </span>
 
         <WrapperIcons>
