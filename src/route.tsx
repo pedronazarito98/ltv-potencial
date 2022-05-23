@@ -7,13 +7,12 @@ import { ThankPage } from "./pages/ThankPage/ThankPage";
 
 export function Router() {
   return (
-    <BrowserRouter>
-    
+    <BrowserRouter basename='/ltv'>
       <Routes>
         <Route path="/" element={<Homepage />} />
-        <Route path="/ltv/success" element={<SuccessPage />} />
-        <Route path="/ltv/thankyou" element={<ThankPage />} />
-        <Route path="/ltv/homeTwo" element={<HomepageTwo />} />
+        <Route path="/success" element={<SuccessPage />} />
+        <Route path="/thankyou" element={<ThankPage />} />
+        <Route path="/homeTwo" element={<HomepageTwo />} />
       </Routes>
       <Footer/>
     </BrowserRouter>
