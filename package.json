@@ -2,6 +2,7 @@
   "name": "ltv-potencial",
   "version": "0.1.0",
   "private": true,
+  "homepage": "/wp-content/themes/hello-elementor/ltv-landingpage",
   "dependencies": {
     "@chakra-ui/react": "^1.8.8",
     "@emotion/react": "^11",
