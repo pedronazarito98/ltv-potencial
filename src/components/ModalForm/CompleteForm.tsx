@@ -37,7 +37,7 @@ export function CompleteForm() {
   const navigate = useNavigate();
 
   const redirect = () => {
-    return navigate("/ltv/success");
+    return navigate("/success");
   };
 
   const portalId = "8759286";

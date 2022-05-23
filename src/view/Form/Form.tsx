@@ -31,7 +31,7 @@ export function Form() {
   const formGuid = "a3660c40-51c8-441d-94ca-252070c438f3";
 
   const redirect = () => {
-    return navigate("/ltv/thankyou");
+    return navigate("/thankyou");
   };
   const {
     register,
