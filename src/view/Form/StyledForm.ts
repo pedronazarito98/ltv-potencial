@@ -40,6 +40,7 @@ export const ContainerForm = styled.section`
 export const FormularioWrapper = styled.form<WrapperInputProps>`
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   align-items: center;
   justify-content: ${({ justify }) => justify && `${justify}`};
 
