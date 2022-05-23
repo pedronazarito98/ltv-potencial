@@ -6,6 +6,7 @@ import { Navbar } from "../../components/Navbar/Navbar";
 import { Depositions } from "../../view/Depositions/Depositions";
 import { DifferencePage } from "../../view/DifferenceLTV/DifferencePage";
 import { Recommendations } from "../../view/Recommendations/Recommendations";
+import { WhatsAppButton } from "../../components/WhatsAppButton/WppButton";
 
 export function Homepage() {
   return (
@@ -18,6 +19,7 @@ export function Homepage() {
         <Recommendations />
         <Features />
         <Depositions />
+        <WhatsAppButton />
       </ContainerMain>
     </>
   );

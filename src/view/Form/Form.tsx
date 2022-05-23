@@ -7,6 +7,7 @@ import { sendRequest } from "../../services/sendRequest";
 import {
   CapsuleField,
   ContainerForm,
+  FooterForm,
   FormularioWrapper,
   WrapperInput,
 } from "./StyledForm";
@@ -14,18 +15,23 @@ import {
 interface FormProps {
   email: string;
   firstname?: string;
+  acceptTerms?: boolean;
 }
 
-type FetchData = (email: string, firstname?: string) => Promise<FormProps[]>;
+type FetchData = (
+  email: string,
+  firstname?: string,
+  acceptTerms?: boolean
+) => Promise<FormProps[]>;
 
 export function Form() {
   const navigate = useNavigate();
 
-  const portalId ='8759286';
-  const formGuid = 'a3660c40-51c8-441d-94ca-252070c438f3';
+  const portalId = "8759286";
+  const formGuid = "a3660c40-51c8-441d-94ca-252070c438f3";
 
   const redirect = () => {
-    return navigate("/success");
+    return navigate("/ltv/thankyou");
   };
   const {
     register,
@@ -35,7 +41,7 @@ export function Form() {
 
   const submitHubspotForm: FetchData = async (email, firstname) => {
     try {
-      const response = await sendRequest.sendEmail(portalId, formGuid,{
+      const response = await sendRequest.sendEmail(portalId, formGuid, {
         fields: [
           {
             name: "firstname",
@@ -116,22 +122,24 @@ export function Form() {
           <Button onClick={onSubmit} label="saiba mais" />
         </WrapperInput>
 
-        {/* <FooterForm>
-          <input type="checkbox" name="verify" id="verify" />
+        <FooterForm>
+          <input
+            type="checkbox"
+            {...register("acceptTerms", { required: true })}
+            id="acceptTerms"
+          />
           <label htmlFor="veirfy">
             {" "}
             Eu concordo em receber outras comunicações da Cinnecta.
           </label>
+          {errors?.acceptTerms?.type === "required" && (
+            <p>Aceite os termos de privacidade.</p>
+          )}
           <span>
-            Ao informar meus dados com a Politica de Privacidade. Você pode
-            alterar suas permissões de comunicação a qualquer momento.{" "}
+            Ao informar meus dados, concordo com a Política de Privacidade. Você
+            pode alterar suas permissões de comunicação a qualquer tempo.
           </span>
-          <span>
-            Ao clicar em "enviar" abaixo, você concorda que a Cinnecta armazene
-            e processe as informações pessoais enviadas acima para fornecer o
-            conteúdo solicitado.
-          </span>
-        </FooterForm> */}
+        </FooterForm>
       </FormularioWrapper>
     </ContainerForm>
   );

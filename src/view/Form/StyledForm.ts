@@ -8,7 +8,7 @@ interface WrapperInputProps {
 export const ContainerForm = styled.section`
   display: flex;
   flex-direction: column;
-  align-items:center;
+  align-items: center;
 
   width: 100%;
 
@@ -57,56 +57,67 @@ export const WrapperInput = styled.div<WrapperInputProps>`
   width: 100%;
   max-width: ${({ maxWidth }) => (maxWidth ? `${maxWidth}px` : "305px")};
   margin: 8px;
-  button {
-    margin: 0 8px;
-  }
 
   @media (max-width: 425px) {
-    max-width: 302px;
-    button{
-      padding: 16px 90px;
+    max-width: 340px;
+    button {
+      font-size: 15px;
+      padding: 16px 131px;
+    }
+  }
+  @media (max-width: 375px) {
+    button {
+      padding: 16px 125px;
     }
   }
   @media (max-width: 320px) {
-    button{
-      padding: 16px 70px;
+    button {
+      padding: 16px 98px;
     }
   }
 `;
-
 
 export const CapsuleField = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
 
   width: 100%;
   max-width: 355px;
 
-  p{
+  p {
     margin: 0 8px;
-    color:red;
+    color: red;
   }
 `;
 
-
-
-
 export const FooterForm = styled.footer`
-  margin: 0 75px;
+
+  width: 100%;
+  max-width: 850px;
   label {
-    color: var(--text-color);
     font-weight: 500;
+    color: var(--text-color);
   }
   span {
-    color: var(--text-color);
-
-    margin: 8px 16px;
     font-size: 14px;
+    margin: 4px 16px;
     display: inline-block;
+    color: var(--text-color);
+  }
+  p {
+    color: red;
+    font-weight: bold;
+  }
+
+  @media (max-width: 768px) {
+    max-width: 697px;
   }
 
   @media (max-width: 425px) {
     margin: 16px 12px;
+    span {
+    margin: 4px 4px;
+  }
   }
 `;

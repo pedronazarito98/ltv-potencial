@@ -4,16 +4,16 @@ export const dataDifference = [
   {
     title: "LTV Observado",
     content:
-      "é o indicador da forma como é calculado no momento atual - a partir apenas do histórico do cliente.",
+      "é o cálculo do LTV real - o total de receita gerada pelo cliente, da aquisição até o presente.",
   },
   {
     title: "LTV Previsto",
     content:
-      "é o que identifica a tendência futura de consumo para um cliente com base no LTV Observado.",
+      "é a previsão da receita gerada durante todo o ciclo de vida do cliente, até o fim do relacionamento, com base no LTV Observado, tendência consumo e longevidade esperada.",
   },
   {
     title: "LTV Potencial",
     content:
-      "é um indicador preditivo que identifica as oportunidades no valor de ciclo de vida do cliente por meio de uma análise que enriquece o perfil do consumidor com dados comportamentais, demográficos e de geolocalização.",
+      "é o LTV que pode ser alcançado por meio do aproveitamento das oportunidades identificadas e recomendadas de acordo com o histórico, perfil comportamental, socioeconômico e demográfico de cada cliente. É um indicador preditivo que mostra em quem vale a pena investir mais.",
   },
 ];

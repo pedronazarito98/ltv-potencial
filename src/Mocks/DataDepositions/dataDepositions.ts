@@ -1,10 +1,12 @@
 import imgNeon from "../../assets/logos/Samantha-Pittzer.jpg";
 import imgLocaliza from "../../assets/logos/Gustavo-Borges.jpg";
 import imgPorto from "../../assets/logos/Fabio-Morita-Foto.png";
+import imgBrasilSeg from "../../assets/logos/Mariana-Santana.png";
 
 import logoLocaliza from "../../assets/logos/Localiza.png";
 import logoPorto from "../../assets/logos/Porto-seguro.png";
 import logoNeon from "../../assets/logos/Neon_Versão principal.png";
+import logoBrasilSeg from "../../assets/logos/Brasilseg-logo.jpg";
 
 import imgVivo from "../../assets/logos/Vivo.png";
 import imgHapVida from "../../assets/logos/Hapvida.png";
@@ -35,6 +37,14 @@ export const dataDepositions = [
     company: logoNeon,
     office: "CMO da Neon",
     imgDepositions: imgNeon,
+  },
+  {
+    depoiment:
+      "“A confiança que temos no trabalho da Cinnecta é fruto de um atendimento sensacional de todo time e uma solução que entrega mais do que promete. Impressionante como eles estão o tempo todo trazendo oportunidades para construirmos algo fantástico.”",
+    name: "Mariana Santana Oliveira",
+    company: logoBrasilSeg,
+    office: "Coordenadora de Inovação Brasilseg",
+    imgDepositions: imgBrasilSeg,
   },
 ];
 

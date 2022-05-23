@@ -24,6 +24,7 @@ export const WrapperInfo = styled.div`
 
   span {
     font-size: 26px;
+    font-family: "Cabin", sans-serif;
     color: var(--text-color);
   }
 
@@ -63,6 +64,8 @@ export const ButtonAction = styled.a`
   background: var(--blue-200);
   margin: 26px 30px;
   transition: all 0.25s;
+
+  font-family: "Raleway", sans-serif;
   &:hover {
     background: var(--blue-100);
   }

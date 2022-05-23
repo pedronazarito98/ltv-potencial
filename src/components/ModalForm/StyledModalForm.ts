@@ -39,6 +39,17 @@ export const FormularioWrapper = styled.form<WrapperInputProps>`
 
   width: 100%;
   margin: 0 auto;
+
+  button {
+
+    margin: 5px auto;
+    width: 100%;
+    max-width: 330px;
+  }
+
+  @media (max-width: 425px) {
+    justify-content: center;
+  }
 `;
 
 export const WrapperInput = styled.div<WrapperInputProps>`
@@ -50,9 +61,6 @@ export const WrapperInput = styled.div<WrapperInputProps>`
   width: 100%;
   max-width: ${({ maxWidth }) => (maxWidth ? `${maxWidth}px` : "305px")};
 
-  button {
-    margin: 0 8px;
-  }
   p {
     margin: 0 8px;
     color: red;
@@ -76,13 +84,15 @@ export const WrapperInput = styled.div<WrapperInputProps>`
   }
 
   @media (max-width: 425px) {
-    max-width: 302px;
+    max-width: 343px;
   }
 `;
 
 export const FooterForm = styled.footer`
-  margin-left: 33px;
-  p{
+  width: 100%;
+  /* margin-right: 20px; */
+  max-width: 368px;
+  p {
     color: red;
     font-weight: bold;
   }

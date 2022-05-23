@@ -3,6 +3,7 @@ import { Homepage } from "./pages/Home/Homepage";
 import { Footer } from "./components/Footer/Footer";
 import { SuccessPage } from "./pages/SuccessPage/SuccessPage";
 import { HomepageTwo } from "./pages/HomeTwo/HomepageTwo";
+import { ThankPage } from "./pages/ThankPage/ThankPage";
 
 export function Router() {
   return (
@@ -10,8 +11,9 @@ export function Router() {
     
       <Routes>
         <Route path="/" element={<Homepage />} />
-        <Route path="/success" element={<SuccessPage />} />
-        <Route path="/homeTwo" element={<HomepageTwo />} />
+        <Route path="/ltv/success" element={<SuccessPage />} />
+        <Route path="/ltv/thankyou" element={<ThankPage />} />
+        <Route path="/ltv/homeTwo" element={<HomepageTwo />} />
       </Routes>
       <Footer/>
     </BrowserRouter>

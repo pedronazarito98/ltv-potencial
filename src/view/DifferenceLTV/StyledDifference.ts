@@ -33,6 +33,7 @@ export const ContainerContent = styled.div`
 
   @media (max-width: 768px) {
     flex-wrap: wrap-reverse;
+    padding: 0;
   }
 
   @media (max-width: 425px) {

@@ -13,10 +13,6 @@ import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 import { sendRequest } from "../../services/sendRequest";
 
-
-
-
-
 interface FormProps {
   email: string;
   phone?: string;
@@ -41,12 +37,11 @@ export function CompleteForm() {
   const navigate = useNavigate();
 
   const redirect = () => {
-    return navigate("/success");
-  };  
-  
-  const portalId ='8759286';
-  const formGuid = 'fee1bbd7-d6b9-41a7-971e-36545a419ec9';
+    return navigate("/ltv/success");
+  };
 
+  const portalId = "8759286";
+  const formGuid = "fee1bbd7-d6b9-41a7-971e-36545a419ec9";
 
   const {
     register,
@@ -59,7 +54,7 @@ export function CompleteForm() {
     firstname,
     company,
     jobtitle,
-    phone,
+    phone
   ) => {
     try {
       setIsLoading(true);
@@ -198,8 +193,8 @@ export function CompleteForm() {
             <p>Aceite os termos de privacidade.</p>
           )}
           <span>
-            Ao informar meus dados com a Politica de Privacidade. Você pode
-            alterar suas permissões de comunicação a qualquer momento.{" "}
+            Ao informar meus dados, concordo com a Política de Privacidade. Você
+            pode alterar suas permissões de comunicação a qualquer tempo.{" "}
           </span>
           <span>
             Ao clicar em "enviar" abaixo, você concorda que a Cinnecta armazene

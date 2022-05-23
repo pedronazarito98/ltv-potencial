@@ -24,5 +24,11 @@ export const WrapperIcons = styled.div`
     margin: 8px;
     font-size: 24px;
     color: var(--text-color);
+
+    transition: all 0.25s;
+    &:hover {
+      transform: scale(1.2);
+      color: var(--blue-100);
+    }
   }
 `;

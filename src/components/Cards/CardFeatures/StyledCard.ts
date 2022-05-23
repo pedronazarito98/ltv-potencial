@@ -24,10 +24,13 @@ export const ContainerCard = styled.div`
   @media (max-width: 768px) {
     margin: 16px 8px;
     max-width: 305px;
-
+    height: 183px;
     img {
       width: 70px;
     }
+  }
+  @media (max-width: 320px) {
+    height: 150px;
   }
 `;
 

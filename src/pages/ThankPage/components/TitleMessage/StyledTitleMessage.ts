@@ -1,3 +1,4 @@
+import { ButtonAction } from "./../../../../view/Recommendations/StyledRecommendations";
 import styled from "styled-components";
 
 export const ContainerTitleSuccess = styled.div`
@@ -16,7 +17,14 @@ export const ContainerTitleSuccess = styled.div`
 
   span {
     display: inline-block;
-    margin-top: 16px;
+    margin: 16px 0 38px 0;
+  }
+
+  ${ButtonAction} {
+    background-color: var(--blue-100);
+    &:hover {
+      background-color: var(--blue-200);
+    }
   }
 
   @media (max-width: 425px) {

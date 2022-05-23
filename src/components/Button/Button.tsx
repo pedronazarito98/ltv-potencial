@@ -12,6 +12,7 @@ export function Button({
   onClick,
   label,
   variant='primary',
+  ...rest
 }: ButtonProps) {
   return (
     <StyledButton
@@ -19,6 +20,7 @@ export function Button({
       onClick={onClick}
       type="submit"
       variant={variant}
+      {...rest}
     >
       {label}
     </StyledButton>

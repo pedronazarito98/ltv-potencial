@@ -36,4 +36,8 @@ export const StyledCardInfo = styled.div`
       font-size: 13px;
     }
   }
+
+  @media (max-width: 425px){
+    margin-bottom: 24px;
+  }
 `;
