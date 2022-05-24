@@ -17,6 +17,8 @@ export const ContainerTitleSuccess = styled.div`
   span {
     display: inline-block;
     margin-top: 16px;
+    font-family: "Raleway", sans-serif;
+    color: var(--text-color);
   }
 
   @media (max-width: 425px) {

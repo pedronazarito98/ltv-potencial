@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Button } from "../../components/Button/Button";
 import { ButtonAction } from "../Recommendations/StyledRecommendations";
 
 export const ContainerDifference = styled.section`
@@ -41,6 +42,11 @@ export const ContainerContent = styled.div`
       width: 370px;
     }
   }
+  @media (max-width: 365px) {
+    img {
+      width: 350px;
+    }
+  }
   @media (max-width: 320px) {
     img {
       width: 295px;
@@ -66,6 +72,15 @@ export const FooterDifference = styled.footer`
     button {
       padding: 16px 72px;
       margin-bottom: 16px;
+    }
+  }
+  @media (max-width: 360px) {
+    
+    button {
+      padding: 16px 70px;
+    }
+    ${ButtonAction} {
+      padding: 16px 70px;
     }
   }
   @media (max-width: 320px) {

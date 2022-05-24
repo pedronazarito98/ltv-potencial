@@ -54,7 +54,7 @@ export const WrapperContent = styled.div`
   }
 
   @media (max-width: 1024px) {
-    h1 {
+    h2 {
       font-size: 22px;
     }
     p {
@@ -63,7 +63,7 @@ export const WrapperContent = styled.div`
   }
 
   @media (max-width: 768px) {
-    h1 {
+    h2 {
       font-size: 18px;
     }
     p {
@@ -71,7 +71,7 @@ export const WrapperContent = styled.div`
     }
   }
   @media (max-width: 320px) {
-    h1 {
+    h2 {
       font-size: 14px;
     }
     p {

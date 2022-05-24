@@ -48,9 +48,20 @@ export const ContentContainer = styled.div`
     }
   }
 
+  @media (max-width: 425px) {
+    iframe {
+      height: 209px;
+    }
+  }
+  @media (max-width: 375px) {
+    iframe {
+      height: 178px;
+    }
+  }
+
   @media (max-width: 320px) {
     iframe {
-      height: 204px;
+      height: 159px;
     }
   }
 `;

@@ -24,7 +24,7 @@ export const dataDepositions = [
   },
   {
     depoiment:
-      "Uma coisa que me chamou atenção na Cinnecta não é só o know how técnico de método estatistico e tecnologia, mas também uma sensibilidade em relação a casos de negócio, casos práticos de uso.",
+      "Na minha área, nós conduzimos com a Cinnecta um trabalho para desenvolver o lifetime value de um de nossos produtos e a parceria foi muito bem sucedida.",
     name: "Fábio Morita",
     company: logoPorto,
     office: "CDO da Porto",

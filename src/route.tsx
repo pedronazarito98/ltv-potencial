@@ -12,7 +12,7 @@ export function Router() {
         <Route path="/" element={<Homepage />} />
         <Route path="/success" element={<SuccessPage />} />
         <Route path="/thankyou" element={<ThankPage />} />
-        <Route path="/homeTwo" element={<HomepageTwo />} />
+        <Route path="/cinnecta-ltv" element={<HomepageTwo />} />
       </Routes>
       <Footer/>
     </BrowserRouter>

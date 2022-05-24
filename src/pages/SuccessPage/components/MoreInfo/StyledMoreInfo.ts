@@ -29,6 +29,8 @@ export const ContainerVideo = styled.div`
     margin-top: 8px;
     font-size: 15px;
     font-weight: lighter;
+    font-family: "Raleway", sans-serif;
+    color: var(--text-color);
   }
 
   @media (max-width: 768px) {
@@ -90,5 +92,8 @@ export const ContainerMore = styled.div`
     margin-top: 8px;
     font-size: 14px;
     font-weight: lighter;
+    font-family: "Raleway", sans-serif;
+    color: var(--text-color);
+
   }
 `;
