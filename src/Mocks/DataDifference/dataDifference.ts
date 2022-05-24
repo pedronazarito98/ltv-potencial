@@ -1,5 +1,3 @@
-
-
 export const dataDifference = [
   {
     title: "LTV Observado",

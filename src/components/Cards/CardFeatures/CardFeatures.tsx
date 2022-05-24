@@ -11,7 +11,7 @@ export function CardFeatures({ image, title, description }: CardFeaturesProps) {
     <ContainerCard>
       <img src={image} alt="icon feature" loading="lazy" />
       <WrapperContent>
-        <h1>{title}</h1>
+        <h2>{title}</h2>
         <p>{description}</p>
       </WrapperContent>
     </ContainerCard>

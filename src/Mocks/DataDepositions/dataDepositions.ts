@@ -1,17 +1,17 @@
-import imgNeon from "../../assets/logos/Samantha-Pittzer.jpg";
-import imgLocaliza from "../../assets/logos/Gustavo-Borges.jpg";
-import imgPorto from "../../assets/logos/Fabio-Morita-Foto.png";
-import imgBrasilSeg from "../../assets/logos/Mariana-Santana.png";
+import imgNeon from "../../assets/images/Samantha-Pittzer.jpg";
+import imgLocaliza from "../../assets/images/Gustavo-Borges.jpg";
+import imgPorto from "../../assets/images/Fabio-Morita-Foto.png";
+import imgBrasilSeg from "../../assets/images/Mariana-Santana.png";
 
 import logoLocaliza from "../../assets/logos/Localiza.png";
 import logoPorto from "../../assets/logos/Porto-seguro.png";
-import logoNeon from "../../assets/logos/Neon_Versão principal.png";
 import logoBrasilSeg from "../../assets/logos/Brasilseg-logo.jpg";
+import logoNeon from "../../assets/logos/Neon_Versão principal.png";
 
 import imgVivo from "../../assets/logos/Vivo.png";
+import imgNatura from "../../assets/logos/Natura.png";
 import imgHapVida from "../../assets/logos/Hapvida.png";
 import imgBradesco from "../../assets/logos/Bradesco.png";
-import imgNatura from "../../assets/logos/Natura.png";
 
 export const dataDepositions = [
   {

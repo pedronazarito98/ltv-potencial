@@ -9,6 +9,7 @@ export const Container = styled.section`
 
   width: 100%;
   padding: 30px;
+  margin-top: 46px;
   background-color: var(--text-body);
 `;
 

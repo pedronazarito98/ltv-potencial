@@ -17,7 +17,7 @@ export function Recommendations() {
       <WrapperInfo>
         <span>
           <strong>Cinnecta LTV: a plataforma de recomendação de ações </strong>
-          impulsiona o aumento de ticket e o tempo de vida do cliente na sua
+          que impulsiona o aumento de ticket e o tempo de vida do cliente na sua
           base.
         </span>
 

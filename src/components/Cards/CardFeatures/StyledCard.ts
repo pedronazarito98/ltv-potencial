@@ -38,7 +38,7 @@ export const WrapperContent = styled.div`
   display: flex;
   flex-direction: column;
 
-  h1 {
+  h2 {
     font-family: "Cabin", sans-serif;
     font-size: 24px;
     font-weight: 400;

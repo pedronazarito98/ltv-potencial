@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 interface NavbarProps {
   visible: boolean;
-  visibleButton?:boolean;
+  visibleButton?: boolean;
 }
 
 export const ContainerNavbar = styled.nav<NavbarProps>`
@@ -22,7 +22,7 @@ export const ContainerNavbar = styled.nav<NavbarProps>`
   box-shadow: -1px 0px 7px 0px #0000005c;
 
   img {
-    height: 30px;
+    height: 35px;
   }
 
   @media (max-width: 425px) {

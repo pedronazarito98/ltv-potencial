@@ -1,7 +1,7 @@
-import churnIcon from "../../assets/icons/churn-icon.png";
-import experienceIcon from "../../assets/icons/experience-icon.png";
-import segmentesIcon from "../../assets/icons/segments-icon.png";
-import upCreditIcon from "../../assets/icons/up-credit-icon.png";
+import churnIcon from "../../assets/icons/churnIcon.png";
+import upCreditIcon from "../../assets/icons/upCreditIcon.png";
+import segmentesIcon from "../../assets/icons/segmentsIcon.png";
+import experienceIcon from "../../assets/icons/experienceIcon.png";
 
 export const dataCardFeatures = [
   {

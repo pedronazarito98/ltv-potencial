@@ -5,9 +5,9 @@ import {
   FinishMessage,
   WrapperContent,
 } from "./StyledContentInfo";
-import FotoEquipe from "../../../../assets/Foto-equipe.jpg";
+import FotoEquipe from "../../../../assets/images/Foto-equipe.jpg";
 import { ButtonAction } from "../../../../view/Recommendations/StyledRecommendations";
-import Logo_Cinnecta from "../../../../assets/logos/cinnecta_logo_horizontal_icone_rgb_gradiente.webp";
+import Logo_Cinnecta from "../../../../assets/logos/LogoCinnecta.png";
 
 export function ContentInfo() {
   return (
