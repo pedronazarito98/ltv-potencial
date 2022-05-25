@@ -26,6 +26,11 @@ export const ContainerEmpresas = styled.div`
   span {
     font-size: 26px;
     color: var(--text-color);
+    font-family: "Cabin", sans-serif;
+
+    strong {
+      font-family: "Cabin", sans-serif;
+    }
   }
 
   @media (max-width: 768px) {
@@ -45,11 +50,10 @@ export const ContainerLogos = styled.div`
   padding: 30px 0;
   align-content: center;
   justify-content: space-between;
-
-  @media (max-width: 320px){
+  align-items: center;
+  @media (max-width: 320px) {
     width: 100%;
     flex-direction: column;
-
   }
 `;
 

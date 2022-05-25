@@ -104,7 +104,7 @@ export function Form() {
               {...register("firstname", { required: true })}
               name="firstname"
               type="text"
-              placeholder="Nome"
+              placeholder="nome"
             />
             {errors?.firstname?.type === "required" && <p>Campo obrigatório</p>}
           </CapsuleField>
@@ -114,7 +114,7 @@ export function Form() {
               {...register("email", { required: true })}
               name="email"
               type="email"
-              placeholder="E-mail coorporativo"
+              placeholder="e-mail corporativo"
             />
             {errors?.email?.type === "required" && <p>Campo obrigatório</p>}
           </CapsuleField>
@@ -136,8 +136,15 @@ export function Form() {
             <p>Aceite os termos de privacidade.</p>
           )}
           <span>
-            Ao informar meus dados, concordo com a Política de Privacidade. Você
-            pode alterar suas permissões de comunicação a qualquer tempo.
+            Ao informar meus dados, concordo com a{" "}
+            <a
+              href="https://cinnecta.com/privacy-policy/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Política de Privacidade.
+            </a>{" "}
+            Você pode alterar suas permissões de comunicação a qualquer tempo.
           </span>
         </FooterForm>
       </FormularioWrapper>

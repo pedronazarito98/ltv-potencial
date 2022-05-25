@@ -93,7 +93,6 @@ export const CapsuleField = styled.div`
 `;
 
 export const FooterForm = styled.footer`
-
   width: 100%;
   max-width: 850px;
   label {
@@ -105,6 +104,12 @@ export const FooterForm = styled.footer`
     margin: 4px 16px;
     display: inline-block;
     color: var(--text-color);
+  }
+  a {
+    color: var(--text-color);
+    &:hover {
+      text-decoration: underline !important;
+    }
   }
   p {
     color: red;
@@ -118,7 +123,7 @@ export const FooterForm = styled.footer`
   @media (max-width: 425px) {
     margin: 16px 12px;
     span {
-    margin: 4px 4px;
-  }
+      margin: 4px 4px;
+    }
   }
 `;

@@ -138,7 +138,7 @@ export function CompleteForm() {
             {...register("firstname", { required: true })}
             name="firstname"
             type="text"
-            placeholder="Nome"
+            placeholder="nome"
           />
           {errors?.firstname?.type === "required" && <p>Campo obrigatório</p>}
 
@@ -146,7 +146,7 @@ export function CompleteForm() {
             {...register("email", { required: true })}
             name="email"
             type="email"
-            placeholder="E-mail coorporativo"
+            placeholder="e-mail corporativo"
           />
           {errors?.email?.type === "required" && <p>Campo obrigatório</p>}
         </WrapperInput>
@@ -156,14 +156,14 @@ export function CompleteForm() {
             {...register("jobtitle", { required: true })}
             type="text"
             name="jobtitle"
-            placeholder="Cargo"
+            placeholder="cargo"
           />
           {errors?.jobtitle?.type === "required" && <p>Campo obrigatório</p>}
           <Input
             {...register("company", { required: true })}
             type="text"
             name="company"
-            placeholder="Empresa"
+            placeholder="empresa"
           />
           {errors?.company?.type === "required" && <p>Campo obrigatório</p>}
         </WrapperInput>
@@ -174,7 +174,7 @@ export function CompleteForm() {
             {...register("phone", { required: true })}
             type="text"
             name="phone"
-            placeholder="WhatsApp"
+            placeholder="whatsApp"
           />
           {errors?.phone?.type === "required" && <p>Campo obrigatório</p>}
         </WrapperInput>
@@ -185,7 +185,7 @@ export function CompleteForm() {
             {...register("acceptTerms", { required: true })}
             id="acceptTerms"
           />
-          <label htmlFor="veirfy">
+          <label htmlFor="acceptTerms">
             {" "}
             Eu concordo em receber outras comunicações da Cinnecta.
           </label>
@@ -193,8 +193,15 @@ export function CompleteForm() {
             <p>Aceite os termos de privacidade.</p>
           )}
           <span>
-            Ao informar meus dados, concordo com a Política de Privacidade. Você
-            pode alterar suas permissões de comunicação a qualquer tempo.{" "}
+            Ao informar meus dados, concordo com a{" "}
+            <a
+              href="https://cinnecta.com/privacy-policy/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Política de Privacidade.
+            </a>{" "}
+            Você pode alterar suas permissões de comunicação a qualquer tempo.{" "}
           </span>
           <span>
             Ao clicar em "enviar" abaixo, você concorda que a Cinnecta armazene

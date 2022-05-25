@@ -101,11 +101,16 @@ export const FooterForm = styled.footer`
     font-weight: 500;
   }
   span {
-    color: var(--text-color);
-
     margin: 8px 0;
     font-size: 12px;
     display: inline-block;
+    color: var(--text-color);
+  }
+  a {
+    color: var(--text-color);
+    &:hover {
+      text-decoration: underline !important;
+    }
   }
 
   @media (max-width: 425px) {

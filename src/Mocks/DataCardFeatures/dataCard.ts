@@ -8,7 +8,7 @@ export const dataCardFeatures = [
     image: upCreditIcon,
     title: "Maximizar o valor de cada cliente",
     description:
-      "Identifique quais são exatamente os perfis com maior potencial de geração de valor.",
+      "Identifique exatamente quais são os perfis com maior potencial de geração de valor.",
   },
   {
     image: segmentesIcon,
@@ -26,6 +26,6 @@ export const dataCardFeatures = [
     image: experienceIcon,
     title: "Melhorar a experiência",
     description:
-      "Ofereça experiências totalmente personalizadas, no tempo e com grupo correto de clientes.",
+      "Ofereça experiências totalmente personalizadas, no melhor tempo e para o grupo correto de clientes.",
   },
 ];

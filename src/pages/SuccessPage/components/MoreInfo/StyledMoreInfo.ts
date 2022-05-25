@@ -48,10 +48,20 @@ export const WrapperVideoplayer = styled.div`
     max-width: 468px;
     height: 262px;
   }
+  @media (max-width: 425px) {
+    iframe {
+      height: 189px;
+    }
+  }
 
   @media (max-width: 375px) {
     iframe {
-      height: 184px;
+      height: 180px;
+    }
+  }
+  @media (max-width: 320px) {
+    iframe {
+      height: 142px;
     }
   }
 `;

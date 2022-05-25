@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Button } from "../../components/Button/Button";
 import { ButtonAction } from "../Recommendations/StyledRecommendations";
 
 export const ContainerDifference = styled.section`
@@ -17,6 +16,8 @@ export const ContainerDifference = styled.section`
 
   > h1 {
     color: #fff;
+    font-family: "Cabin", sans-serif;
+    font-size: 32px;
   }
 `;
 
@@ -32,6 +33,11 @@ export const ContainerContent = styled.div`
     width: 560px;
   }
 
+  @media (max-width: 1024px) {
+    img {
+      width: 460px;
+    }
+  }
   @media (max-width: 768px) {
     flex-wrap: wrap-reverse;
     padding: 0;
@@ -75,7 +81,6 @@ export const FooterDifference = styled.footer`
     }
   }
   @media (max-width: 360px) {
-    
     button {
       padding: 16px 70px;
     }
