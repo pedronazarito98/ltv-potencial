@@ -15,7 +15,7 @@ export function Navbar({ visibleButton = true }: NavbarProps) {
   return (
     <ContainerNavbar visible={visible} visibleButton={visibleButton}>
       <a href="/">
-        <img src={logoCinnecta} alt="Logo_Cinnecta" loading="lazy" />
+        <img src={logoCinnecta} alt="Logo_Cinnecta"  />
       </a>
       {visibleButton && (
         <div>

@@ -29,7 +29,7 @@ export function Depositions() {
           clickable: true,
         }}
         autoplay={{
-          delay: 3500,
+          delay: 8000,
           disableOnInteraction: false,
         }}
         centeredSlides={true}
