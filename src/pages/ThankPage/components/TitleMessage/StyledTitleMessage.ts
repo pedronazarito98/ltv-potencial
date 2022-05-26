@@ -16,6 +16,7 @@ export const ContainerTitleSuccess = styled.div`
   }
 
   span {
+    font-family: 'Raleway', sans-serif;
     display: inline-block;
     margin: 16px 0 38px 0;
   }

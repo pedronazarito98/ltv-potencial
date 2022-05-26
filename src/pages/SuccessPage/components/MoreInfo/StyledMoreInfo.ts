@@ -100,7 +100,7 @@ export const ContainerMore = styled.div`
   span {
     display: inline-block;
     margin-top: 8px;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: lighter;
     font-family: "Raleway", sans-serif;
     color: var(--text-color);

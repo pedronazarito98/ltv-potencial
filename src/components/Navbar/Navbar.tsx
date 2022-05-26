@@ -1,7 +1,7 @@
 import { ContainerNavbar } from "./StyledNavbar";
 import { useModal } from "../../hooks/useModal/useModal";
 import { useScrollBar } from "../../hooks/useScrollBar/useScrollBar";
-import logoCinnecta from "../../assets/logos/LogoCinnecta.png";
+import logoCinnecta from "../../assets/logos/LogoCinnecta.webp";
 import { ModalForm } from "../ModalForm/ModalForm";
 
 interface NavbarProps{

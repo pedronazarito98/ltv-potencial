@@ -20,7 +20,7 @@ export function Modal({ titleModal, bodyModal, onOpen, isClose }: ModalProps) {
     <ChakraModal  isOpen={onOpen} onClose={isClose}>
       <ModalOverlay />
       <ModalContent>
-        <ModalHeader>{titleModal}</ModalHeader>
+        <ModalHeader color='#021564'>{titleModal}</ModalHeader>
         <ModalCloseButton />
         <ModalBody>{bodyModal}</ModalBody>
       </ModalContent>

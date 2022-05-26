@@ -97,7 +97,7 @@ export function Form() {
     <ContainerForm>
       <h1>Por que é importante calcular o LTV Potencial?</h1>
 
-      <FormularioWrapper onSubmit={onSubmit} justify="center">
+      <FormularioWrapper onSubmit={onSubmit} >
         <WrapperInput justify="center" maxWidth={1000}>
           <CapsuleField>
             <Input

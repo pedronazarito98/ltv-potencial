@@ -30,6 +30,8 @@ export const ContainerForm = styled.section`
   }
 
   @media (max-width: 425px) {
+    padding: 10px;
+    
     h1 {
       font-size: 28px;
       margin: 8px;
@@ -42,11 +44,15 @@ export const FormularioWrapper = styled.form<WrapperInputProps>`
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
-  justify-content: ${({ justify }) => justify && `${justify}`};
+  justify-content: flex-start;
 
   width: 100%;
   margin: 0 auto;
   padding: 1.25rem;
+
+  @media (max-width: 425px){
+    align-items: flex-start;
+  }
 `;
 
 export const WrapperInput = styled.div<WrapperInputProps>`
@@ -60,7 +66,7 @@ export const WrapperInput = styled.div<WrapperInputProps>`
   margin: 8px;
 
   @media (max-width: 425px) {
-    max-width: 340px;
+    max-width: 377px;
     button {
       font-size: 15px;
       padding: 16px 131px;
@@ -68,12 +74,18 @@ export const WrapperInput = styled.div<WrapperInputProps>`
   }
   @media (max-width: 375px) {
     button {
-      padding: 16px 125px;
+      padding: 16px 121px;
+    }
+  }
+
+  @media (max-width: 360px) {
+    button {
+      padding: 16px 115px;
     }
   }
   @media (max-width: 320px) {
     button {
-      padding: 16px 98px;
+      padding: 16px 94px;
     }
   }
 `;
