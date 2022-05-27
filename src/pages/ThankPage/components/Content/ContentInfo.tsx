@@ -7,7 +7,7 @@ import {
 } from "./StyledContentInfo";
 import FotoEquipe from "../../../../assets/images/Foto-equipe.jpg";
 import { ButtonAction } from "../../../../view/Recommendations/StyledRecommendations";
-import Logo_Cinnecta from "../../../../assets/logos/LogoCinnecta.png";
+import Logo_Cinnecta from "../../../../assets/logos/cinnecta-logo.svg";
 
 export function ContentInfo() {
   return (

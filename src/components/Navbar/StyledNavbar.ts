@@ -22,7 +22,7 @@ export const ContainerNavbar = styled.nav<NavbarProps>`
   box-shadow: -1px 0px 7px 0px #0000005c;
 
   img {
-    width: 135px;
+    width: 150px;
   }
 
   @media (max-width: 425px) {

@@ -10,7 +10,7 @@ export function Features() {
 
   return (
     <SectionFeatures>
-      <TitleFeature>Com o Cinnecta LTV você pode</TitleFeature>
+      <TitleFeature>Com o cinnecta ltv você pode</TitleFeature>
 
       <WrapperCards>
         {dataCardFeatures.map(({ image, title, description }) => (

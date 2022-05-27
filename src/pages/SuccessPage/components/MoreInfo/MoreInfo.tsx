@@ -16,9 +16,9 @@ export function MoreInfo() {
         <span>
           veja o que <strong>Eduardo </strong>e{" "}
           <strong>Ricardo Ferreira</strong>, fundadores da Cinnecta, explicam
-          neste vídeo exclusivo sobre as funcionalidades da plataforma Cinnecta
-          LTV.
+          neste vídeo sobre as funcionalidades da plataforma cinnecta ltv.
         </span>
+
         <WrapperVideoplayer>
           <iframe
             src="https://www.youtube.com/embed/ewKXX5oLuto"
