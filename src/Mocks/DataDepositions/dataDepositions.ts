@@ -15,6 +15,7 @@ import imgBradesco from "../../assets/logos/Bradesco.png";
 
 export const dataDepositions = [
   {
+    id: "localiza",
     depoiment:
       "A Cinnecta é uma grande parceira da Localiza e tem contribuído de forma muito relevante em iniciativas estratégicas. Os resultados da parceria são robustos e apareceram rapidamente.",
     name: "Gustavo Borges",
@@ -23,6 +24,7 @@ export const dataDepositions = [
     imgDepositions: imgLocaliza,
   },
   {
+    id: "Porto",
     depoiment:
       "Na minha área, nós conduzimos com a Cinnecta um trabalho para desenvolver o lifetime value de um de nossos produtos e a parceria foi muito bem sucedida.",
     name: "Fábio Morita",
@@ -31,6 +33,7 @@ export const dataDepositions = [
     imgDepositions: imgPorto,
   },
   {
+    id: "Neon",
     depoiment:
       "A Cinnecta nos ajudou a ter uma visão mais completa dos clientes, com informações que jamais conseguiríamos. Esses insights trouxeram de 10% a 20% de incremento na eficiência nas nossas ações.",
     name: "Samantha Pittzer",
@@ -39,6 +42,7 @@ export const dataDepositions = [
     imgDepositions: imgNeon,
   },
   {
+    id: "Brasilseg",
     depoiment:
       "A confiança que temos no trabalho da Cinnecta é fruto de um atendimento sensacional de todo time e uma solução que entrega mais do que promete. Impressionante como eles estão o tempo todo trazendo oportunidades para construirmos algo fantástico.",
     name: "Mariana Santana",
@@ -49,16 +53,8 @@ export const dataDepositions = [
 ];
 
 export const dataImage = [
-  {
-    image: imgVivo,
-  },
-  {
-    image: imgHapVida,
-  },
-  {
-    image: imgBradesco,
-  },
-  {
-    image: imgNatura,
-  },
+  { id: 1, image: imgVivo },
+  { id: 2, image: imgHapVida },
+  { id: 3, image: imgBradesco },
+  { id: 4, image: imgNatura },
 ];

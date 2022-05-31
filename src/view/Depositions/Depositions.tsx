@@ -43,10 +43,10 @@ export function Depositions() {
         }}
       >
         {dataDepositions.map(
-          ({ name, company, depoiment, imgDepositions, office }) => (
+          ({ name, company, depoiment, imgDepositions, office,id }) => (
             <SwiperSlide>
               <CardDepositions
-                key={name}
+                key={id}
                 depoiment={depoiment}
                 name={name}
                 company={company}
@@ -64,9 +64,9 @@ export function Depositions() {
         </span>
 
         <ContainerLogos>
-          {dataImage.map(({ image }) => (
+          {dataImage.map(({ image,id }) => (
             <WrapperLogo>
-              <img src={image} alt="imgLogo" loading="lazy" />
+              <img key={id} src={image} alt="imgLogo" loading="lazy" />
             </WrapperLogo>
           ))}
         </ContainerLogos>
