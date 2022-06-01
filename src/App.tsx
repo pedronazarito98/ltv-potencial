@@ -4,7 +4,7 @@ import { ToastContainer } from "react-toastify";
 import { ChakraProvider } from "@chakra-ui/react";
 import { GlobalStyle } from "./styles/globalStyles";
 
-export function App() {
+export default function App() {
   return (
     <>
       <ChakraProvider resetCSS={false}>
