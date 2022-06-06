@@ -11,6 +11,7 @@ import {
   FormularioWrapper,
   WrapperInput,
 } from "./StyledForm";
+import { useRef } from "react";
 
 interface FormProps {
   email: string;
@@ -24,9 +25,9 @@ type FetchData = (
   acceptTerms?: boolean
 ) => Promise<FormProps[]>;
 
-export function Form() {
+export function Form({ref}: any) {
   const navigate = useNavigate();
-
+  const myRef = useRef(null)
   const portalId = "8759286";
   const formGuid = "a3660c40-51c8-441d-94ca-252070c438f3";
 
@@ -94,10 +95,10 @@ export function Form() {
   });
 
   return (
-    <ContainerForm>
+    <ContainerForm ref={myRef}>
       <h1>Por que é importante calcular o LTV Potencial?</h1>
 
-      <FormularioWrapper onSubmit={onSubmit} >
+      <FormularioWrapper onSubmit={onSubmit}>
         <WrapperInput justify="center" maxWidth={1000}>
           <CapsuleField>
             <Input

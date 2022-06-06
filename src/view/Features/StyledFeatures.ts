@@ -41,12 +41,16 @@ export const FooterButtons = styled.footer`
   align-items: center;
   justify-content: flex-start;
 
+  button {
+    margin-right: 1.25rem;
+  }
+
   @media (max-width: 425px) {
     flex-direction: column;
-
     button {
-      padding: 16px 72px;
-      margin-bottom: 16px;
+      margin-right: 0;
+      padding: 1rem 3.75rem;
+      margin-bottom: 1rem;
     }
   }
 `;

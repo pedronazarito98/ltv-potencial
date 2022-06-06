@@ -8,11 +8,12 @@ import { CardInfo } from "./components/CardInfo";
 import { useModal } from "../../hooks/useModal/useModal";
 import gifDifference from "../../assets/gif/DifferenceLTV.gif";
 import { ModalForm } from "../../components/ModalForm/ModalForm";
-import { ButtonAction } from "../Recommendations/StyledRecommendations";
 import { dataDifference } from "../../Mocks/DataDifference/dataDifference";
+import { Button } from "../../components/Button/Button";
 
 export function DifferencePage() {
   const { isOpen, onChangeModal } = useModal();
+  const scrollTop = () =>{   window.scrollTo({top: 0, behavior: 'smooth'});};
 
   return (
     <ContainerDifference>
@@ -32,13 +33,7 @@ export function DifferencePage() {
           onClick={onChangeModal}
           isClose={onChangeModal}
         />
-        <ButtonAction
-          href="https://www.youtube.com/watch?v=ewKXX5oLuto"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          entenda mais
-        </ButtonAction>
+        <Button  variant='secondary' onClick={scrollTop} label="entenda mais" />
       </FooterDifference>
     </ContainerDifference>
   );

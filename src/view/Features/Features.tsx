@@ -1,12 +1,20 @@
+import { Button } from "../../components/Button/Button";
 import { useModal } from "../../hooks/useModal/useModal";
 import { ModalForm } from "../../components/ModalForm/ModalForm";
 import { dataCardFeatures } from "../../Mocks/DataCardFeatures/dataCard";
-import {  FooterButtons, SectionFeatures, TitleFeature, WrapperCards } from "./StyledFeatures";
 import { CardFeatures } from "../../components/Cards/CardFeatures/CardFeatures";
-import { ButtonAction } from "../Recommendations/StyledRecommendations";
+import {
+  FooterButtons,
+  SectionFeatures,
+  TitleFeature,
+  WrapperCards,
+} from "./StyledFeatures";
 
 export function Features() {
   const { isOpen, onChangeModal } = useModal();
+  const scrollTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
 
   return (
     <SectionFeatures>
@@ -30,13 +38,7 @@ export function Features() {
           onClick={onChangeModal}
           isClose={onChangeModal}
         />
-        <ButtonAction
-          href="https://www.youtube.com/watch?v=ewKXX5oLuto"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          entenda mais
-        </ButtonAction>
+        <Button variant="secondary" onClick={scrollTop} label="entenda mais" />
       </FooterButtons>
     </SectionFeatures>
   );

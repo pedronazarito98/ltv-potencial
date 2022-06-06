@@ -1,12 +1,11 @@
 import styled from "styled-components";
-import { ButtonAction } from "../Recommendations/StyledRecommendations";
 
 export const ContainerDifference = styled.section`
   background-color: var(--text-color);
 
   width: 100%;
-  padding: 60px;
-  margin-top: 40px;
+  padding: 3.75rem;
+  margin-top: 2.5rem;
 
   display: flex;
   flex-wrap: wrap;
@@ -17,25 +16,25 @@ export const ContainerDifference = styled.section`
   > h1 {
     color: #fff;
     font-family: "Cabin", sans-serif;
-    font-size: 32px;
+    font-size: 2rem;
   }
 `;
 
 export const ContainerContent = styled.div`
   width: 100%;
-  margin-top: 45px;
-  padding: 0 66px;
+  margin-top: 2.813rem;
+  padding: 0 4.125rem;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 
   img {
-    width: 560px;
+    width: 35rem;
   }
 
   @media (max-width: 1024px) {
     img {
-      width: 460px;
+      width: 28.75rem;
     }
   }
   @media (max-width: 768px) {
@@ -45,17 +44,17 @@ export const ContainerContent = styled.div`
 
   @media (max-width: 425px) {
     img {
-      width: 370px;
+      width: 23.125rem;
     }
   }
   @media (max-width: 365px) {
     img {
-      width: 350px;
+      width: 21.875rem;
     }
   }
   @media (max-width: 320px) {
     img {
-      width: 295px;
+      width: 18.438rem;
     }
   }
 `;
@@ -64,7 +63,7 @@ export const WrapperCard = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 500px;
+  max-width: 31.25rem;
 `;
 
 export const FooterDifference = styled.footer`
@@ -72,28 +71,22 @@ export const FooterDifference = styled.footer`
   align-items: center;
   justify-content: flex-start;
 
+  button {
+    margin-right: 1.25rem;
+  }
+
   @media (max-width: 425px) {
     flex-direction: column;
+    button {
+      margin-right: 0;
+      padding: 1rem 3.75rem;
+      margin-bottom: 1rem;
+    }
+  }
 
-    button {
-      padding: 16px 72px;
-      margin-bottom: 16px;
-    }
-  }
-  @media (max-width: 360px) {
-    button {
-      padding: 16px 70px;
-    }
-    ${ButtonAction} {
-      padding: 16px 70px;
-    }
-  }
   @media (max-width: 320px) {
     button {
-      padding: 16px 45px;
-    }
-    ${ButtonAction} {
-      padding: 16px 47px;
+      padding: 1rem 2.5rem;
     }
   }
 `;

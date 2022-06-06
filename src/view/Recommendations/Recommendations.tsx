@@ -1,5 +1,4 @@
 import {
-  ButtonAction,
   ContainerButton,
   ContainerRecommendations,
   WrapperImage,
@@ -8,9 +7,13 @@ import {
 import { useModal } from "../../hooks/useModal/useModal";
 import imgPc from "../../assets/Mockup - Cinnecta LTV.png";
 import { ModalForm } from "../../components/ModalForm/ModalForm";
+import { Button } from "../../components/Button/Button";
 
 export function Recommendations() {
   const { isOpen, onChangeModal } = useModal();
+  const scrollTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
 
   return (
     <ContainerRecommendations>
@@ -28,13 +31,11 @@ export function Recommendations() {
             isClose={onChangeModal}
           />
 
-          <ButtonAction
-            href="https://www.youtube.com/watch?v=W4W8XsYxZKU"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            entenda mais
-          </ButtonAction>
+          <Button
+            variant="secondary"
+            onClick={scrollTop}
+            label="entenda mais"
+          />
         </ContainerButton>
       </WrapperInfo>
 

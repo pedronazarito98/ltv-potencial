@@ -2,8 +2,7 @@ import styled from "styled-components";
 
 export const ContainerRecommendations = styled.section`
   width: 100%;
-  /* max-width: 950px; */
-  margin: 65px auto;
+  margin: 4.063rem auto;
 
   display: flex;
   flex-wrap: wrap-reverse;
@@ -19,21 +18,21 @@ export const WrapperInfo = styled.div`
   flex-wrap: wrap;
 
   width: 100%;
-  max-width: 507px;
-  padding: 30px;
+  max-width: 31.688rem;
+  padding: 1.875rem;
 
   span {
-    font-size: 26px;
+    font-size: 1.625rem;
     font-family: "Cabin", sans-serif;
     color: var(--text-color);
   }
 
   button {
-    margin: 26px 0;
+    margin: 1.625rem 0;
   }
 
   @media (max-width: 768px) {
-    max-width: 405px;
+    max-width: 25.313rem;
   }
 
   @media (max-width: 425px) {
@@ -45,11 +44,11 @@ export const WrapperInfo = styled.div`
 
 export const WrapperImage = styled.div`
   img {
-    width: 400px;
+    width: 25rem;
   }
   @media (max-width: 768px) {
     img {
-      width: 280px;
+      width: 17.5rem;
     }
   }
 `;
@@ -57,12 +56,12 @@ export const WrapperImage = styled.div`
 export const ButtonAction = styled.a`
   color: #fff;
   border: 0;
-  font-size: 16px;
+  font-size: 1rem;
   overflow: hidden;
-  padding: 14px 40px;
+  padding: 0.875rem 2.5rem;
   border-radius: 0.25rem;
   background: var(--blue-200);
-  margin: 26px 30px;
+  margin: 1.625rem 1.875rem;
   transition: all 0.25s;
 
   font-family: "Raleway", sans-serif;
@@ -71,10 +70,10 @@ export const ButtonAction = styled.a`
   }
 
   @media (max-width: 768px) {
-    margin: 4px 8px;
+    margin: 0.25rem 0.5rem;
   }
   @media (max-width: 425px) {
-    padding: 10px 72px;
+    padding: 0.625rem 4.5rem;
     margin: 0;
   }
 `;
@@ -85,14 +84,16 @@ export const ContainerButton = styled.div`
   justify-content: flex-start;
 
   button {
-    padding: 16px 24px;
+    padding: 1rem 1.5rem;
+    margin-right: .95rem;
   }
 
   @media (max-width: 425px) {
     flex-direction: column;
     button {
-      padding: 16px 24px;
-      margin: 8px 0;
+      margin-right: 0;
+      padding: 1rem 3.75rem;
+      margin-bottom: 1rem;
     }
   }
 `;
